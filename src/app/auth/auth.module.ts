@@ -5,6 +5,7 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { LayoudPageComponent } from './pages/layoud-page/layoud-page.component';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -15,7 +16,13 @@ import { LayoudPageComponent } from './pages/layoud-page/layoud-page.component';
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    MaterialModule
+  ],
+  exports:[
+    LoginPageComponent,
+    LayoudPageComponent,
+    RegisterPageComponent
   ]
 })
 export class AuthModule { }
