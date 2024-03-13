@@ -20,9 +20,6 @@ import { MaterialModule } from '../material/material.module';
     MaterialModule
   ],
   exports:[
-    LoginPageComponent,
-    LayoudPageComponent,
-    RegisterPageComponent
   ]
 })
 export class AuthModule { }
