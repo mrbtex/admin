@@ -7,6 +7,7 @@ import { LayoudPageComponent } from './pages/layoud-page/layoud-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { NewPageComponent } from './pages/new-page/new-page.component';
 import { ShearchPageComponent } from './pages/shearch-page/shearch-page.component';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ShearchPageComponent } from './pages/shearch-page/shearch-page.componen
   ],
   imports: [
     CommonModule,
-    VelosRoutingModule
+    VelosRoutingModule,
+    MaterialModule
   ]
 })
 export class VelosModule { }

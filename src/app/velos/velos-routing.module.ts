@@ -11,9 +11,9 @@ const routes: Routes = [
     path: '',
     component: LayoudPageComponent,
     children: [
-      { path: 'new-page', component: NewPageComponent},
-      { path: 'shearch', component: ShearchPageComponent},
-      { path: 'list-page', component: ListPageComponent},
+      { path: 'new', component: NewPageComponent},
+      { path: 'search', component: ShearchPageComponent},
+      { path: 'list', component: ListPageComponent},
       { path: 'edit/:id', component: NewPageComponent},
       { path: ':id', component: VelosPageComponent},
       { path: '**', redirectTo: 'list'}
